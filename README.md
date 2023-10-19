@@ -1,12 +1,12 @@
 # C - Stacks, Queues - LIFO, FIFO
 
-The Monty Bytecode Interpreter is a program written in C programming language that reads and executes Monty bytecode files. Monty is a simple programming language that uses a stack data structure.
+The Monty Bytecode Interpreter is a program written in C programming language that reads and executes Monty bytecode files. Monty is a simple programming language that uses a head_stack data structure.
 
 ## Objectives:
 At the end of this project, you are expected to be able to explain to anyone, without the help of Google:
 
 * What do LIFO and FIFO mean
-* What is a stack, and when to use it
+* What is a head_stack, and when to use it
 * What is a queue, and when to use it
 * What are the common implementations of stacks and queues
 * What are the most common use cases of stacks and queues
@@ -32,8 +32,8 @@ julien@ubuntu:~/monty$
 Monty byte code files can contain blank lines (empty or made of spaces only, and any additional text after the opcode or its required argument is not taken into account:
 ```
 julien@ubuntu:~/monty$ cat -e bytecodes/001.m
-push 0 Push 0 onto the stack$
-push 1 Push 1 onto the stack$
+push 0 Push 0 onto the head_stack$
+push 1 Push 1 onto the head_stack$
 $
 push 2$
   push 3$
